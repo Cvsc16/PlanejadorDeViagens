@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/distanceFragment">
+
+    <fragment
+        android:id="@+id/distanceFragment"
+        android:name="com.dev.caiovinicius.planejadordeviagens.DistanceFragment"
+        android:label="fragment_distance"
+        tools:layout="@layout/fragment_distance" >
+        <action
+            android:id="@+id/action_distanceFragment_to_consumptionFragment"
+            app:destination="@id/consumptionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/consumptionFragment"
+        android:name="com.dev.caiovinicius.planejadordeviagens.ConsumptionFragment"
+        android:label="fragment_consumption"
+        tools:layout="@layout/fragment_consumption" />
+</navigation>
