@@ -4,13 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ConsumptionFragment">
+    tools:context=".PriceFragment">
 
     <TextView
-        android:id="@+id/tvConsumption"
+        android:id="@+id/tvPrice"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/insira_o_consumo_medio_do_veiculo_em_km_l"
+        android:text="@string/insira_o_preco_medio_do_combustivel_por_litro"
         android:textAlignment="center"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -24,14 +24,14 @@
         android:layout_marginTop="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvConsumption">
+        app:layout_constraintTop_toBottomOf="@+id/tvPrice">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/tietDistance"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="numberDecimal"
-            android:hint="@string/consumo_km_l"
+            android:hint="@string/pre_o_por_litro"
             />
 
     </com.google.android.material.textfield.TextInputLayout>

@@ -1,6 +1,7 @@
 package com.dev.caiovinicius.planejadordeviagens
 
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -34,30 +35,48 @@ class MainActivity : AppCompatActivity() {
         }
 
         with(binding) {
-            btnNext.setOnClickListener {
-                when(btnNext.text) {
-                    getString(R.string.comecar) -> {
-                        navController.navigate(R.id.action_distanceFragment_to_consumptionFragment)
-                        btnNext.apply {
-                            text = getString(R.string.proximo)
+
+
+
+            navController.addOnDestinationChangedListener { _, destination, _ ->
+                Log.d("MAINACTIVITYLOG", "onCreate: ${navController.currentDestination}")
+                when (destination.id) {
+
+                    R.id.distanceFragment -> {
+                        btnNext.setOnClickListener {
+                            navController.navigate(R.id.action_distanceFragment_to_consumptionFragment)
+                            btnNext.apply {
+                                text = getString(R.string.proximo)
+                            }
+                            btnBack.apply {
+                                visibility = View.VISIBLE
+                            }
                         }
                         btnBack.apply {
-                            visibility = View.VISIBLE
+                            visibility = View.GONE
                         }
                     }
 
-                    getString(R.string.proximo) -> {
+                    R.id.consumptionFragment -> {
+                        btnNext.setOnClickListener {
+                            navController.navigate(R.id.action_consumptionFragment_to_priceFragment)
+                        }
+                        btnBack.setOnClickListener {
+                            navController.popBackStack()
+                            btnNext.apply {
+                                text = getString(R.string.comecar)
+                            }
+                            btnBack.apply {
+                                visibility = View.GONE
+                            }
+                        }
                     }
-                }
-            }
 
-            btnBack.setOnClickListener {
-                navController.popBackStack()
-                btnNext.apply {
-                    text = getString(R.string.comecar)
-                }
-                btnBack.apply {
-                    visibility = View.GONE
+                    R.id.priceFragment -> {
+                        btnBack.setOnClickListener {
+                            navController.popBackStack()
+                        }
+                    }
                 }
             }
         }

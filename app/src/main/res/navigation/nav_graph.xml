@@ -18,5 +18,13 @@
         android:id="@+id/consumptionFragment"
         android:name="com.dev.caiovinicius.planejadordeviagens.ConsumptionFragment"
         android:label="fragment_consumption"
-        tools:layout="@layout/fragment_consumption" />
+        tools:layout="@layout/fragment_consumption" >
+        <action
+            android:id="@+id/action_consumptionFragment_to_priceFragment"
+            app:destination="@id/priceFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/priceFragment"
+        android:name="com.dev.caiovinicius.planejadordeviagens.PriceFragment"
+        android:label="PriceFragment" />
 </navigation>
