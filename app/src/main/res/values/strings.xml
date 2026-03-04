@@ -7,6 +7,7 @@
     <string name="insira_a_distancia_a_ser_percorrida_em_km">Insira a distância a ser percorrida (em km)</string>
     <string name="proximo">Próximo</string>
     <string name="voltar">Voltar</string>
+    <string name="planejar_outra_viagem">Planejar Outra Viagem</string>
     <string name="distancia_km">Distância (km)</string>
     <string name="insira_o_consumo_medio_do_veiculo_em_km_l">Insira o consumo médio do veículo (em km/L).</string>
     <string name="consumo_km_l">Consumo (km/l)</string>

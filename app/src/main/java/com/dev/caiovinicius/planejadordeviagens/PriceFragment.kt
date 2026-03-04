@@ -26,4 +26,8 @@ class PriceFragment : Fragment() {
 
         }
     }
+
+    fun getPriceValue(): String {
+        return binding.tietPrice.text.toString()
+    }
 }

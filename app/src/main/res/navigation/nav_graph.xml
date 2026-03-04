@@ -26,5 +26,18 @@
     <fragment
         android:id="@+id/priceFragment"
         android:name="com.dev.caiovinicius.planejadordeviagens.PriceFragment"
-        android:label="PriceFragment" />
+        android:label="PriceFragment" >
+        <action
+            android:id="@+id/action_priceFragment_to_resultFragment"
+            app:destination="@id/resultFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/resultFragment"
+        android:name="com.dev.caiovinicius.planejadordeviagens.ResultFragment"
+        android:label="fragment_result"
+        tools:layout="@layout/fragment_result" >
+        <action
+            android:id="@+id/action_resultFragment_to_distanceFragment"
+            app:destination="@id/distanceFragment" />
+    </fragment>
 </navigation>

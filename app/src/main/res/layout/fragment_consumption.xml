@@ -27,7 +27,7 @@
         app:layout_constraintTop_toBottomOf="@+id/tvConsumption">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/tietDistance"
+            android:id="@+id/tietConsumption"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="numberDecimal"

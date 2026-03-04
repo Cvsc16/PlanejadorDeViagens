@@ -28,4 +28,8 @@ class DistanceFragment : Fragment() {
         }
     }
 
+    fun getDistanceValue(): String {
+        return binding.tietDistance.text.toString()
+    }
+
 }

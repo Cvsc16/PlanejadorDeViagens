@@ -28,4 +28,8 @@ class ConsumptionFragment : Fragment() {
         }
     }
 
+    fun getConsumptionValue(): String {
+        return binding.tietConsumption.text.toString()
+    }
+
 }
