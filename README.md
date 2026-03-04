@@ -43,4 +43,4 @@ Durante o desenvolvimento, garantimos:
 - **Internacionalização Base:** Uso recomendado de `strings.xml` para formatações com `placeholders`, minimizando hardcodeds no arquivo.
 
 ## 📝 Licença
-Desenvolvido por **[Seu Nome/Caio Vinícius]** como parte do ecossistema Rocketseat. Sintam-se livres para explorar o código.
+Desenvolvido por **Caio Vinícius** como parte do ecossistema Rocketseat. Sintam-se livres para explorar o código.
