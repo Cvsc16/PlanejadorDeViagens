@@ -13,4 +13,7 @@
     <string name="consumo_km_l">Consumo (km/l)</string>
     <string name="insira_o_preco_medio_do_combustivel_por_litro">Insira o preço médio do combustível (por litro)</string>
     <string name="pre_o_por_litro">Preço (por litro)</string>
+    <string name="resultado_consumo">Consumo: %1$s km/L</string>
+    <string name="resultado_preco">Preço: R$ %1$s</string>
+    <string name="resultado_custo">Custo Total Estimado: R$ %1$s</string>
 </resources>
