@@ -29,4 +29,8 @@ class TravelViewModel : ViewModel() {
         }
     }
 
+    fun resetState() {
+        _uiState.value = TravelUiState()
+    }
+
 }

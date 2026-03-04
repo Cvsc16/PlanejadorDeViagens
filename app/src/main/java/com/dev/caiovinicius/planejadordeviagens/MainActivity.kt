@@ -156,6 +156,8 @@ class MainActivity : AppCompatActivity() {
 
                     R.id.resultFragment -> {
                         btnNext.setOnClickListener {
+                            travelViewModel.resetState()
+
                             navController.navigate(R.id.action_resultFragment_to_distanceFragment)
                             btnNext.apply {
                                 text = getString(R.string.comecar)
