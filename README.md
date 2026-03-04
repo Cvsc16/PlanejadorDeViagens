@@ -5,7 +5,7 @@ Um aplicativo Android nativo desenvolvido em Kotlin para ajudar viajantes a esti
 ## 🎯 Sobre o Projeto
 Este projeto foi desenvolvido como um desafio do curso **Fundamentos do Android com Kotlin** da **Rocketseat**. O aplicativo consiste em um fluxo interativo ("wizard" de 3 etapas) que coleta informações do usuário e apresenta o cálculo estimado do custo final da viagem.
 
-O grande diferencial deste projeto é a construção arquitetural focada em escalabilidade e nas melhores práticas recomendadas no mercado Android nível Pleno/Sênior.
+O grande diferencial deste projeto é a construção arquitetural focada em escalabilidade e nas melhores práticas recomendadas no mercado Android atual.
 
 ## ✨ Funcionalidades
 * **Tela Inicial:** Boas vindas e início do fluxo de planejamento.
